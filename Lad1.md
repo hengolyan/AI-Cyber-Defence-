@@ -28,6 +28,18 @@ Encrypt Systems (25%)
         ▼
 Demand Ransom / Threaten Data Leak (10%)
 
+## Attack Flow
+
+```mermaid
+flowchart LR
+    A["T1005<br/>Collection<br/>Data from Local System<br/>30%"]
+    --> B["T1567<br/>Exfiltration<br/>Over Web Service<br/>35%"]
+
+    B --> C["T1486<br/>Impact<br/>Data Encrypted<br/>25%"]
+
+    C --> D["T1657<br/>Extortion<br/>Financial Theft<br/>10%"]
+```
+
 Why these four techniques?
 - T1005 enables attackers to gather valuable information.
 
@@ -38,6 +50,16 @@ Why these four techniques?
 - T1657 pressures victims into paying by threatening public disclosure.
 
 **MITRE ATT&CK Mapping**-
+## MITRE ATT&CK Mapping
+
+| Tactic | Technique | Behavior | ATT&CK |
+|--------|-----------|----------|--------|
+| Collection | T1005 – Data from Local System | Collects sensitive files before ransomware deployment. | [T1005](https://attack.mitre.org/techniques/T1005/) |
+| Exfiltration | T1567 – Exfiltration Over Web Service | Transfers stolen data to attacker-controlled servers. | [T1567](https://attack.mitre.org/techniques/T1567/) |
+| Impact | T1486 – Data Encrypted for Impact | Encrypts systems and files to disrupt operations. | [T1486](https://attack.mitre.org/techniques/T1486/) |
+| Impact | T1657 – Financial Theft / Extortion | Threatens to publish stolen data unless ransom is paid. | [T1657](https://attack.mitre.org/techniques/T1657/) |
+
+
 | Tactic | Technique | Behavior from the Report | ATT&CK Link |
 
 |--------|-----------|--------------------------|-------------|
