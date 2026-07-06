@@ -38,19 +38,17 @@ Why these four techniques?
 - T1657 pressures victims into paying by threatening public disclosure.
 
 **MITRE ATT&CK Mapping**-
+| Tactic | Technique | Behavior from the Report | ATT&CK Link |
 
+|--------|-----------|--------------------------|-------------|
 
-| Tactic           | Technique                                 | Behavior from the Report                                                                                      | ATT&CK Link                                |
-|------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **Collection** | **T1005 – Data from Local System** | Attackers collect sensitive files and business data from compromised systems before launching the ransomware. | https://attack.mitre.org/techniques/T1005/ |
 
-| **Collection**   | **T1005 – Data from Local System**        | Attackers collect sensitive files and business data from compromised systems before launching the ransomware. | https://attack.mitre.org/techniques/T1005/ |
+| **Exfiltration** | **T1567 – Exfiltration Over Web Service** | Stolen data is transferred to attacker-controlled infrastructure and later used for extortion. | https://attack.mitre.org/techniques/T1567/ |
 
-| **Exfiltration** | **T1567 – Exfiltration Over Web Service** | Stolen data is transferred to attacker-controlled infrastructure and later used for extortion.                | https://attack.mitre.org/techniques/T1567/ |
+| **Impact** | **T1486 – Data Encrypted for Impact** | Attackers encrypt victim systems and files to disrupt operations and demand a ransom. | https://attack.mitre.org/techniques/T1486/ |
 
-| **Impact**       | **T1486 – Data Encrypted for Impact**     | Attackers encrypt victim systems and files to disrupt operations and demand a ransom.                         | https://attack.mitre.org/techniques/T1486/ |
-
-| **Impact**       | **T1657 – Financial Theft / Extortion**   | Attackers threaten to publish the stolen data unless the victim pays the ransom (double extortion).           | https://attack.mitre.org/techniques/T1657/ |
-
+| **Impact** | **T1657 – Financial Theft / Extortion** | Attackers threaten to publish the stolen data unless the victim pays the ransom (double extortion). | https://attack.mitre.org/techniques/T1657/ |
 
 **What We Learned**-
 This attack demonstrates how modern ransomware groups combine data theft, encryption, and extortion to maximize pressure on victims. 
